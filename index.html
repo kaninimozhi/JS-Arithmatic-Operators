@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arithmatic Operators</title>
+</head>
+<body>
+    <h1 style="text-align: center"> Arithmatic Operations</h1>
+    <hr>
+    <h2> Simple Arithmatic Equations</h2>
+     
+    <p style="text-align: center; font-size: 25px"> Variable x = 20  and Variable y = 5 </p>
+    <hr>
+    <p id=add style="font-size: 20px"> Result for Addition is : </p>
+    <p id=sub style="font-size: 20px"> Result for Subtraction is : </p>
+    <p id=mul style="font-size: 20px"> Result for Multiplication is : </p>
+    <p id=div style="font-size: 20px"> Result for Division is : </p>
+
+    <p id=mod style="font-size: 20px"> Result for Modulus is : </p>
+    <p id=exp style="font-size: 20px"> Result for Exponent is : </p>
+
+    <p id=inc_x_post style="font-size: 20px"> Result for Post -Increment of X is : </p>
+    <p id=inc_x_pre style="font-size: 20px"> Result for Pre - Increment of X is : </p>
+
+    <p id=dec_x_post style="font-size: 20px"> Result for Post -Decrement of X is : </p>
+    <p id=dec_x_pre style="font-size: 20px"> Result for Pre - Decrement of X is : </p>
+
+
+    <p id=inc_y_post style="font-size: 20px"> Result for Post -Increment of Y is : </p>
+    <p id=inc_y_pre style="font-size: 20px"> Result for Pre - Increment of Y is : </p>
+
+    <p id=dec_y_post style="font-size: 20px"> Result for Post -Decrement of Y is : </p>
+    <p id=dec_y_pre style="font-size: 20px"> Result for Pre - Decrement of Y is : </p>
+
+    <hr>
+    <h2> Complex Arithmatic Equations</h2>
+    <hr>
+    <p id=eq1 style="font-size: 20px"> 5 + 6 - 11 + 8 * 5 + 4 =   </p>
+    <p id=eq2 style="font-size: 20px"> (1800/10) + ( 12 - 6) + ( 24 -12)  =   </p>
+    <p id=eq3 style="font-size: 20px"> 20 * 2 - (1/2) * 9.8 * 2**2  =   </p>
+    <p id=eq4 style="font-size: 20px"> 4 **3 ** 2 =   </p>
+    <p id=eq5 style="font-size: 20px"> 7 + (6 * 5**2 + 3) =   </p>
+
+    <script>
+        var x=20, y=5;
+        document.getElementById('add').innerHTML += x + y ;
+        document.getElementById('sub').innerHTML += x - y ;
+        document.getElementById('mul').innerHTML += x * y ;
+        document.getElementById('div').innerHTML += x / y ;
+
+        document.getElementById('mod').innerHTML += x % y ;
+        document.getElementById('exp').innerHTML += x ** y ; // 20 /\ 5
+
+        document.getElementById('inc_x_post').innerHTML += x++ ; //20 ++
+        document.getElementById('inc_x_pre').innerHTML += ++x ;  //++21
+
+        document.getElementById('dec_x_post').innerHTML += x-- ; //22 --
+        document.getElementById('dec_x_pre').innerHTML += --x ;  //--21 
+
+        document.getElementById('inc_y_post').innerHTML += y++ ;
+        document.getElementById('inc_y_pre').innerHTML += ++y ;
+
+        document.getElementById('dec_y_post').innerHTML += y-- ;
+        document.getElementById('dec_y_pre').innerHTML += --y ;
+
+        document.getElementById('eq1').innerHTML += 5 + 6 - 11 + 8 * 5 + 4;
+        document.getElementById('eq2').innerHTML += (1800/10) + ( 12 - 6) + ( 24 -12);
+        document.getElementById('eq3').innerHTML += 20 * 2 - (1/2) * 9.8 * 2**2;
+        document.getElementById('eq4').innerHTML +=  4 **3 ** 2;
+        document.getElementById('eq5').innerHTML += 7 + (6 * 5**2 + 3);
+
+    </script>
+
+</body>
+</html>
